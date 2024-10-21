@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Background</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+      </style>
+
+</head>
+<body>
+  <div class="parent">
+
+    <div class="helo">
+      <header class="head">
+          <div>
+            <ul class="nav">
+              <li>LOGO</li>
+              <li><a href="http://localhost:8000/about_us">About Us</a></li>
+              <li><a href="http://localhost:8000/menu">Menu</a></li>
+              <li><a href="http://localhost:8000/order_Online">Order Online</a></li>
+              <li><a href="http://localhost:8000/contact">Contact</a></li>
+            </ul>
+          </div>
+      </header>
+      <img class="dis" src="/images/home/Background+Border.png" alt="">
+      <p class="par">Vegan Ice Cream Delights</p>
+      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut cupiditate, hic repudiandae suscipit est.</p>
+      <button class="btn">Clickk</button>
+  </div>
+  <div class="swiper-box">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img class="ice" src="/images/home/art-image.png.png" alt=""></div>
+            <div class="swiper-slide"> <img class="ice" src="/images/home/banner2-image.png.png" alt=""></div>
+            <div class="swiper-slide"> <img class="ice" src="/images/home/banner2-image.png.png" alt="">3</div>
+            <div class="swiper-slide"> <img class="ice" src="/images/home/banner2-image.png.png" alt="">4</div>
+            <div class="swiper-slide"> <img class="ice" src="/images/home/banner2-image.png.png" alt="">5</div>
+          </div>
+        </div>
+  </div>    
+  </div class="trends">
+    <h1 class="trend">Our Popular <span class="spann">Ice</span>-Cream</h1>
+    <div class="tre-cont">
+      <div><img src="/images/home/Figure(2).png" width="80%"  alt=""><p>Almond Joy Sundae</p><button>Add to Cart</button></div>
+      <div><img src="/images/home/Figure(1).png" width="80%" alt=""><p>Berry Sorbet</p><button>Add to Cart</button></div>
+      <div><img src="/images/home/Figure.png" width="80%" alt=""><p>Milk Choclate Chip</p><button>Add to Cart</button></div>
+    </div>
+
+    <p>.</p>
+    
+     <%- include("partials/footer.ejs") %>
+     <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      effect: 'slide', // 'slide', 'fade', 'cube', 'coverflow', or 'flip'
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

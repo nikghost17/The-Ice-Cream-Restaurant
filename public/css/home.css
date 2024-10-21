@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    transform: all ease 0.3s;
+  }
+  
+  html {
+    
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background:#f57fb234;
+    background-repeat: no-repeat;
+  }
+  
+  .background {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(245, 164, 222, 0.861), rgba(254, 242, 242, 0.991), rgba(244, 221, 172, 0.986));
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .bg{
+    width: 100%;
+    height: 80vh;
+    margin: 5%;
+    z-index: 0;
+    overflow: visible;
+    
+  }
+  
+  
+  :root {
+    /* FONT */
+    --FF: "Nunito", sans-serif;
+    --FS: 1.5rem;
+    --FS-XL: 3rem;
+  
+    /* COLOR */
+    --BGCOLOR: #475569;
+    --ALT-BGCOLOR: #1E293B;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: #000;
+  
+    /* SQUARE */
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
+  
+    /* GENERAL */
+    --PADDING: 0.5rem;
+    --SHADOWS: 0px 6px 5px -5px var(--DARK-COLOR);
+      /* 5px blur value -5px spread */
+    --BORDERS: 2px solid var(--DARK-COLOR);
+  }
+  
+  .ice{
+    position: absolute;
+    z-index: 10;
+    bottom: 5vh;
+    width: 35vw;
+    height: 39vh;
+    background-size: cover;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #0F0200;
+  }
+  
+  .head{
+    width: 80vw;
+    height: 8vh;
+    position: fixed;
+    border-radius: 20px;  
+    z-index: 20;
+    background-color: aliceblue;
+    left: 10vw;
+    top: 2vh;
+    box-shadow: var(--SHADOWS);
+  }
+  
+  .nav{
+    margin-left: 10%;
+    width:80% ;
+    margin-top: 1.5%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  
+  .dis{
+    position: absolute;
+    left: 80%;
+    bottom: 70%;
+  }
+  
+  .desc{
+    position: absolute;
+  margin-top: 55vh;
+  margin-left: 8vw;
+  width: 50%;
+  color: #FFFFFF;
+  
+  }
+  
+  
+  
+  .btn{
+    /* Link */
+  
+  position: absolute;
+  width: 258.34px;
+  height: 52px;
+  left: 8vw;
+  top: 65%;
+  color: whitesmoke;
+  background: #F83D8E;
+  border-radius: 30px;
+  font-size: 2rem;
+  }
+  
+  .helo {
+    background-image: url("/images/home/1c63e8a86128086716d77865edd7b99e.jpeg");
+    width: 95%;
+    height: 80vh;
+    margin-top: 0.8vh;
+    margin-left: 2.5%;
+    background-size: cover;
+    background-position: center;
+    overflow:visible;
+    z-index: 10;
+    border-radius:  20px;
+    box-shadow: var(--SHADOWS);
+  }
+  
+  
+  .par{
+  position: absolute;
+  width: 729px;
+  height: 237px;
+  left: 17.5vh;
+  top: 20vh;
+  
+  font-family: 'Berkshire Swash';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 112px;
+  /* or 96% */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  }
+  
+  .swiper-box {
+    width: 40vw;  
+    height: 50vh; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    position: absolute;
+    top: 30vh;
+    left: 60vw;
+    z-index: 15;
+  }
+  
+  .swiper-container {
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: transparent;
+    width: 100%; /* Ensure each slide takes up the full width */
+    height: 100%; /* Ensure each slide takes up the full height */
+  }
+  .trend{
+    /* Our Popular Vegan Treats */
+
+font-family: 'Berkshire Swash';
+font-style: normal;
+font-weight: 400;
+font-size: 4rem;
+line-height: 2rem;
+margin-top: 6%;
+margin-left: 27%;
+
+color: #0F0200;
+}
+
+  .spann{
+    color: #F83D8E;
+  }
+
+.tre-cont{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  padding-left: 3.5vw;
+  border-radius: 15px;
+  box-shadow: var(--SHADOWS);
+}  
+
+.trends{
+  margin-bottom: 80%;
+}
+
+.tre-cont p{
+  font-size: 1.5rem;
+  font-family: 'Berkshire Swash';
+  color: #0F0200;
+  margin-left: 17%;
+  margin-bottom: 8%;
+}  
+
+.tre-cont button{
+  font-size: 0.8rem;
+  color: white;
+  background-color: #F83D8E;
+  border: none;
+  width: 40%;
+  padding: 1.2vh;
+  border-radius: 17px;
+  margin-left: 17%;
+  margin-bottom: 5vh;
+}  
+
+.tre-cont img{
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--SHADOWS);
+}  
+
+
+
+
+
+
+
+.footer{
+  position: relative;
+  width: 100%;
+  min-height: 20%;
+  background-color: #683292;
+  display: flex;
+}
+
+.flogo{
+  height: 20vh;
+  width: 20vw;
+  background-color: #000;
+}

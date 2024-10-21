@@ -1,0 +1,90 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.footer {
+    background-color: #683292; /* purple background */
+    padding: 50px 0;
+    color: white;
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 10%;
+    border-radius: 17px 17px 0 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+.footer-row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer-col {
+width: 30%;
+margin-bottom: 30px;
+}
+
+.footer-col h4 {
+font-size: 18px;
+margin-bottom: 20px;
+color: white;
+}
+
+.footer-col ul {
+list-style: none;
+}
+
+.footer-col ul li {
+margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+color: #ff6b81; /* pinkish color for hover */
+}
+
+.footer-col p {
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.social-links a {
+display: inline-block;
+background: #ff6b81; /* pinkish */
+color: white;
+margin-right: 10px;
+padding: 10px;
+border-radius: 50%;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.social-links a:hover {
+background: #f53c68; /* darker pink on hover */
+}
+
+.footer-bottom {
+text-align: center;
+padding: 20px 0;
+border-top: 1px solid #fff;
+margin-top: 30px;
+font-size: 14px;
+}
+
+.footer-bottom p {
+margin: 0;
+color: #fff;
+}

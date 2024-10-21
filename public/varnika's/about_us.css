@@ -1,0 +1,101 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    
+}
+
+.nav{
+    height : 3.7rem;
+    background-color: rgb(242 12 144);
+}
+
+@keyframes slides{
+    0%{
+        background-image : url("https://img.pikbest.com/ai/illus_our/20230414/2037dcc017577076852f5c35c385d759.jpg!w700wp");
+        background-size : cover;
+        object-fit: cover;
+        height : 37rem;
+        width : 78.5rem;
+        
+    } 
+    25%{
+        background-image : url("https://img.freepik.com/free-photo/flat-lay-mint-chocolate-ice-cream_23-2150096671.jpg");
+        background-size : cover;
+        object-fit: cover;
+        height : 37rem;
+        width : 78.5rem;
+    } 
+    75%{
+        background-image : url("https://thumbs.dreamstime.com/b/ice-cream-fruit-dark-background-271386517.jpg");
+        background-size : cover;
+        object-fit: cover;
+        height : 37rem;
+        width : 78.5rem;
+    }
+    100%{
+        background-image : url("https://c4.wallpaperflare.com/wallpaper/838/522/479/ice-cream-butter-coloring-spoon-wallpaper-preview.jpg");
+        background-size : cover;
+        object-fit: cover;
+        height : 37rem;
+        width : 78.5rem;
+    }
+}
+
+.slides{
+    animation : slides 15s ease-in infinite;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    top: 3.7rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none; 
+    z-index : 1;
+    height : 37rem;
+    width : 78.5rem;
+}
+
+.main-msg{
+    margin-top : 4rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 1rem;
+    width : 50rem;
+    height : 20rem;;
+    margin-bottom : 70px; 
+    z-index : 3;
+}
+
+.main-msg p, .contact{
+    line-height: 2;
+    color : white;
+    font-size : 22px;
+    font-weight : 1000;
+    z-index : 3;
+}
+
+.contact{
+    color : #ffffff81;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index : 3;
+}
+
+
+
+.contact p:hover{
+    opacity : 1;
+    cursor : pointer;
+    color : white;
+    font-weight : 2000;
+}
+

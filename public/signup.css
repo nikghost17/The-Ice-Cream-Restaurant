@@ -1,0 +1,128 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide spinner in Firefox */
+/* input[type="number"] {
+    -moz-appearance: textfield;
+} */
+
+.nav{
+    height : 60px;
+    width : 100vw;
+    background-color: black;
+    color : rgb(242, 153, 204);
+    /* rgb(64 32 34) */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    background-image : url('https://img.freepik.com/premium-vector/pink-watercolor-background_318204-34.jpg');
+    background-size: cover;
+    object-fit: cover;
+    image-rendering: crisp-edges;   
+}
+
+.logo{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/hd/c8f6eb76656899.5c7008675852c.png");
+    width : 19rem;
+    height : 3.5rem;
+    margin-bottom : 3rem;
+    margin-top : 2rem;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+
+.container form{
+    display : flex;
+    align-items : center;
+    flex-direction : column;
+    width : 33rem;
+    gap : 3rem;
+    font-size : 1.3rem;
+    background-color: white;
+    padding : 25px;
+    border-radius : 50px;
+}
+
+
+.container input, button{
+    color : rgb(242 12 144);
+    height : 2rem;
+    width : 30rem;
+    border-radius: 1.2rem;
+    padding : 0.3rem;
+}
+
+input::placeholder {
+    color: rgb(242, 153, 204); 
+    opacity: 1; 
+    background-color: white;
+}
+
+.container button{
+    font-size : 1.3rem;
+    height : 3.3rem;
+    border : 2px solid rgb(242 12 144);
+    background-color: rgb(242 12 144);
+    color : white;
+    border-radius : 1.2rem;
+}
+
+.container button:hover{
+    cursor : pointer;
+    transition : transform 2s;
+    height : 3.5rem;
+    font-size : 1.4rem;
+    box-shadow : 0.2rem 0.2rem 0.2rem 0rem #f20c90;
+}
+
+.username, .password{
+    border : 0.15rem solid #402022;
+    background-color: white;
+}
+
+.cred{
+    color : rgb(242 12 144);
+    font-weight : bold;
+    background-color: white;
+}
+
+.error{
+    display : flex;
+    align-items: center;
+    background-color : #dc3545;
+    font-size : 18px;
+    height : 30px;
+}
+
+.text, .cancel{
+    background-color : #dc3545;
+    color : white;
+}
+
+.text{
+    margin-left : 10px;
+}
+
+.cancel{
+    margin-left : 840px;
+}
+
+.cancel:hover{
+    cursor : pointer;
+    font-size : 20px;
+}

@@ -14,30 +14,30 @@
         background-image : url("https://img.pikbest.com/ai/illus_our/20230414/2037dcc017577076852f5c35c385d759.jpg!w700wp");
         background-size : cover;
         object-fit: cover;
-        height : 37rem;
-        width : 78.5rem;
+        height : 100vh;
+        width : 100%;
         
     } 
     25%{
         background-image : url("https://img.freepik.com/free-photo/flat-lay-mint-chocolate-ice-cream_23-2150096671.jpg");
         background-size : cover;
         object-fit: cover;
-        height : 37rem;
-        width : 78.5rem;
+        height : 100vh;
+        width : 100%;
     } 
     75%{
         background-image : url("https://thumbs.dreamstime.com/b/ice-cream-fruit-dark-background-271386517.jpg");
         background-size : cover;
         object-fit: cover;
-        height : 37rem;
-        width : 78.5rem;
+        height : 100vh;
+        width : 100%;
     }
     100%{
         background-image : url("https://c4.wallpaperflare.com/wallpaper/838/522/479/ice-cream-butter-coloring-spoon-wallpaper-preview.jpg");
         background-size : cover;
         object-fit: cover;
-        height : 37rem;
-        width : 78.5rem;
+        height : 100vh;
+        width : 100%;
     }
 }
 
@@ -54,11 +54,11 @@
     display: flex;
     align-items: flex-start;
     top: 3.7rem;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.4); 
     pointer-events: none; 
     z-index : 1;
-    height : 37rem;
-    width : 78.5rem;
+    height : 100vh;
+        width : 100%;
 }
 
 .main-msg{

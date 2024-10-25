@@ -1,80 +1,42 @@
 <!DOCTYPE html>
-
 <html>
-  <header>
-    <title>Login page</title>
-    <link rel="stylesheet" href="css/login.css" /> 
-    <link rel="stylesheet" href="css/footer.css" />
-  </header>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
 
-  <body>
-    <div class="nav">hello</div>
+    <body>
 
-    <div class="container">
-      <div class="logo"></div>
-
-      <form>
-        <div>
-          <label for="username" class="cred">Username</label><br />
-          <input
-            name="username"
-            type="text"
-            class="username"
-            placeholder="Enter your username"
-          />
-        </div>
-        <div>
-          <label for="password" class="cred">Password</label><br />
-          <input
-            name="password"
-            type="password"
-            class="password"
-            placeholder="Enter your password"
-          />
-        </div>
-        <div>
-          <button type="submit" name="login" class="login">Login</button>
-        </div>
-      </form>
-      
-    </div>
-
-<!--     
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Address:</h4>
-                    <p>121 King Street Melbourne, 3000, Australia</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact:</h4>
-                    <p>+123456780123</p>
-                    <p>Got questions? Call us 24/7</p>
-                    <h4>Email:</h4>
-                    <p>info@example.com</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+        <% if (message) { %>
+            <div id="d">
+                <div id="red"><%= message %></div>
+                <div onclick="remove()" class="x">x</div>
             </div>
+        <% } %>
+
+        <div class="container">
+            <div class="logo"></div>
+            
+            <form action="/" method="post">
+                <div>
+                    <label for="username" class="cred">Username</label><br/>
+                    <input name="username" type="text" class="username" placeholder="Enter your username">
+                </div>
+                <div>
+                    <label for="password" class="cred">Password</label><br/>
+                    <input name="password" type="password" class="password" placeholder="Enter your password">
+                </div>
+                <div>
+                    <button type="submit" name="login" class="login">Login</button>
+                </div>
+            </form>
+
+            <% if (message) { %>
+                <button class="login"><a href="/signup">Sign up</a></button>
+            <% } %>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2024 . All rights reserved.</p>
-        </div>
-    </footer> -->
-  </body>
+    </body>
+    <!-- <script src="JavaScript/login.js"></script> -->
+    <script src="routes/login.js"></script>
+
 </html>

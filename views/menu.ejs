@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+    <section id="menu" class="menu-section">
+        
+        
+
+            <% Object.keys(items).forEach(itemtype => { %>
+                <h2><%= itemtype %></h2>
+                <div class="menu-items">
+                <% items[itemtype].forEach(item => { %>
+                    <div class="menu-item">
+                        
+                        <img src="images/menu/<%= item.imgname %>" alt="<%= item.itemname %>">
+                        <div class="menu-details">
+                            <h3><%= item.itemname %></h3>
+                            <div class="price">
+                                <h3 style="color:black">Price: <%= item.price %></h3>
+                                <a href="?id=<%=item.itemid%>"><button class="order-btn" id="btn" data-item="<%= item.itemname %>">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+            <% }); %>
+
+        
+    </section>
+
+</body>
+<script src="JavaScript/menu.js">
+
+    
+
+</script>
+
+</html>

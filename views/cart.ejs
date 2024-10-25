@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <% if(s.length==0)
+        {%>
+            <h1>cart is empty</h1>
+      <%  } 
+      else{ 
+        Total=0;
+        s.forEach(s=>{
+        %>
+
+        <div class="products">
+            <div class="product" id="<%=s.itemid%>">
+                
+                <img src="images/menu/<%=s.imgname%>" alt="">
+                <h2><%=s.itemname%></h2>
+                <p>Price: Rs <%=s.price%></p>
+                <p>Quantity : <%=s.quantity%></p>
+            <a href="/delete?id=<%=s.itemid%>"><button class="b">Remove Item</button></a>
+
+            </div>
+        </div>
+
+        <% Total+=s.price*s.quantity})} %>
+        <h2>Your Cart</h2>
+        <div id="cart" class="cart">
+            <ul id="cart-items"></ul>
+            <% if(s.length!=0){%>
+            <p id="total-price">Total: <%=Total%></p>
+            <a href="/buy"><button id="btn">BUY</button></a>
+
+            <%}%>
+            
+        </div>
+    </div>
+    <% if (buy) { %>
+    
+        <p>   <%= buy %></p> 
+        
+    <% } %>
+</body>
+<script>
+
+    document.querySelectorAll('.b').forEach(button => {
+        button.addEventListener('click', () => {
+            localStorage.setItem('scrollPosition', window.scrollY);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollPosition = localStorage.getItem('scrollPosition');
+        if (scrollPosition) {
+            setTimeout(() => {
+            document.body.style.overflow = 'auto'; 
+            window.scrollTo(0, scrollPosition); 
+            localStorage.removeItem('scrollPosition'); 
+        },0 )
+        }
+        
+        
+    });
+
+    
+
+
+</script>
+</html>
